@@ -1,0 +1,27 @@
+header {
+    box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    //border-bottom: $dark-accent solid 8px;
+}
+
+.NormalTextBox {
+    background: #cecccc;
+    border: none;
+    padding: 10px;
+    width: 150px;
+    font-size: small;
+  }
+  
+  span#dnn_dnnSearch_ClassicSearch {
+    display: flex;
+  }
+  
+  i.fa.fa-search {
+    color: white;
+    background: teal;
+    padding: 8px;
+    vertical-align: bottom;
+  }
+  
+  ul.piped a {
+    color: white;
+  }

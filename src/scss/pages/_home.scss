@@ -1,0 +1,54 @@
+// Services section on home page
+
+
+.serviceContainer {
+    background-size: cover !important; 
+    height: 165px; 
+    position: relative; 
+    overflow: hidden;
+}
+
+.svgLogo {
+    position:absolute; 
+    bottom: 0; 
+    right:67%;
+}
+
+//Services section hover effect
+
+/* background-image: linear-gradient(75deg, #E65F25 30%, transparent 30%), url('[Content:servicesImage]') */
+
+
+//Section containing area map
+
+.mapImage {
+    min-height:100%; 
+    border-left:30px solid white;
+    border-right:30px solid white;
+}
+
+//Featured box area
+
+.featureBox {
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    height: 500px;
+    position: relative;
+    background-clip: content-box !important;
+}
+
+.featureContent {
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    max-height: 500px;
+}
+
+//Sponsor banner section
+
+.sponsorsLogo {
+    width: auto;
+    max-width: 200px;
+    height: 75px;
+}
+

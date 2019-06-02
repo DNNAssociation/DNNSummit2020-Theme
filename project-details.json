@@ -1,9 +1,9 @@
 {
-	"project": "nvQuickTheme",
-	"version": "2.0.0",
-	"author": "TK Sheppard &amp; David Poindexter",
+	"project": "DNNSummit2020",
+	"version": "1.0.0",
+	"author": "David Poindexter",
 	"company": "nvisionative",
-	"url": "www.nvquicktheme.com",
+	"url": "www.nvisionative.com",
     "email": "support@nvisionative.com",
-    "description": "A DNN Theme Dev Framework"
+    "description": "A DNN Theme Theme for DNN Summit 2020"
 }

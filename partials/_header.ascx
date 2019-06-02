@@ -1,23 +1,17 @@
-<header class="bg-light-grey">
-  <div class="container-fluid user-controls bg-tertiary">
-    <div class="container">
-      <div class="row justify-content-end">
-        <ul>
-          <li><dnn:Login runat="server" id="dnnLogin" /></li>
-          <li><dnn:User runat="server" id="dnnUser" /></li>
-          <li><dnn:Search runat="server" id="dnnSearch" ShowSite="false" ShowWeb="false" Submit="<i class='fa fa-search'></i>" /></li>
-          <li style="display:none;"><dnn:Language runat="server" id="dnnLanguage" ShowMenu="false" ShowLinks="false" /></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+<header class="bg-dark-accent sticky-top">
   <div class="container-fluid">
-    <div class="container">
-      <div class="row nav-main">
-        <dnn:LOGO id="dnnLOGO" runat="server" />
-        <nav id="nav-items">
-          <dnn:MENU id="menu" MenuStyle="menus/main" runat="server" NodeSelector="*"></dnn:MENU>
-        </nav>
+    <div class="container px-0">
+      <div class="row nav-main justify-content-between flex-nowrap align-items-center">
+          <dnn:LOGO id="dnnLOGO" runat="server" />
+          <div class="align-items-center">
+            <nav id="nav-items" class="pull-left pt-2">
+              <dnn:MENU id="menu" MenuStyle="menus/main" runat="server" NodeSelector="*,0,2"></dnn:MENU>
+            </nav>
+            <div id="CTAPane" class="pull-right pl-2 py-5" runat="server"></div> 
+          </div>
+          <!--<div class="d-none d-xl-flex align-items-center">
+            <dnn:Search runat="server" id="dnnSearch" ShowSite="false" ShowWeb="false" Submit="<i class='fa fa-search'></i>" />
+          </div>-->
       </div>
     </div>
   </div>

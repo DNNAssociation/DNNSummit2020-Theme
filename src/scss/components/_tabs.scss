@@ -1,0 +1,30 @@
+ul.nav-pills {
+    background-color:$dark-accent;
+    border-radius:3px;
+    //box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+
+    .nav-link {
+        color:white;
+        text-transform:uppercase;
+        border-radius:0;
+        padding:1rem;
+
+        &:hover {
+            background-color:rgba(255,255,255,0.15);
+        }
+
+        &.active {
+            background-color:rgba(255,255,255,0.25);
+        }
+    }
+}
+
+@include mq-max-width(585) {
+    ul.nav-pills {
+        flex-direction:column;
+
+        .nav-link {
+            text-align:center;
+        }
+    }
+}

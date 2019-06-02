@@ -1,0 +1,34 @@
+.service-bg {
+    height:120px;
+    background-size:cover;
+    overflow:hidden;
+}
+.service-logo {
+    position:relative;
+    height:100%;
+}
+.service-logo > svg {
+    position:absolute;
+    height:80%;
+    left:1rem;
+    transform:scale(6.5);
+    transform-origin:70% center;
+    transition:.15s all ease-out;
+    polygon.st1 {
+        fill:$dark-accent;
+    }
+}
+
+.service-logo .background > svg {
+    height:100%;
+    margin-left:-5px;
+}
+.service-logo .background > svg polygon {
+    fill:white;
+}
+.service-item:hover .service-logo > svg, .service-item:focus .service-logo > svg {
+    transform:scale(1);
+    polygon.st1 {
+        fill: $dark-shade;
+    }
+}

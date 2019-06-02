@@ -1,0 +1,53 @@
+<ul class="slimmenu" id="navigation">
+  [*>NODE-TOP]
+  
+</ul>
+
+  [>NODE-TOP]
+    <li[?SELECTED] class="active"[/?]>
+      
+      [?ENABLED]
+        <a href="[=URL]" class="py-4">[=TEXT]</a>
+      [?ELSE]    
+        <a[?NODE] class="sub-toggle py-5"[/?]>[=TEXT]</a>
+      [/?]
+      
+      [?NODE]
+        <ul>
+          [*>NODE-LOWER]
+        </ul>
+      [/?]
+    </li>
+  [/>]
+  
+  [>NODE-LOWER]
+    <li[?SELECTED] class="active"[/?]>
+      [?ENABLED]
+        <a href="[=URL]">[=TEXT]</a>
+      [?ELSE]    
+        <a[?NODE] class="sub-toggle"[/?]>[=TEXT]</a>
+      [/?]
+      
+      [?NODE]
+        <ul>
+          [*>NODE-BOTTOM]
+        </ul>
+      [/?]
+    </li>
+  [/>]
+
+  [>NODE-BOTTOM]
+    <li[?SELECTED] class="active"[/?]>
+      [?ENABLED]
+        <a href="[=URL]">[=TEXT]</a>
+      [?ELSE]    
+        <a>[=TEXT]</a>
+      [/?]
+      
+      [?NODE]
+        <ul>
+          [*>NODE-BOTTOM]
+        </ul>
+      [/?]
+    </li>
+  [/>]

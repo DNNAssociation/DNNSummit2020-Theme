@@ -1,0 +1,21 @@
+//Top home page carousel
+
+.carouselContent {
+    position: absolute;
+    bottom: 50%;
+    z-index: 20;
+    transform: translateY(50%);
+  }
+  
+  #myCarousel{
+    height: 100vh;
+  }
+
+  .homeCarouselItem {
+      background-repeat: no-repeat !important;
+      background-position: center center !important;
+      background-size: cover !important; 
+      height: 80vh;
+  }
+
+  

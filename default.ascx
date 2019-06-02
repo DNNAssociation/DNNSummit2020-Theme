@@ -9,17 +9,18 @@
   <div class="container-fluid bannerpane">
     <div class="container">
       <div class="row justify-content-center">
-        <div id="BannerPane" class="col-md-8 text-center" runat="server"></div>
+        <div id="BannerPane" class="col-md-12 text-center" runat="server"></div>
       </div>
     </div>
   </div>
 
   <div class="container">
     <div class="row justify-content-center">
-      <div id="ContentPane" class="col-md-8 text-center" runat="server"></div> 
+      <div id="ContentPane" class="col-md-12" runat="server"></div> 
     </div>
   </div>
 
+<!--
   <div class="container">
     <div class="row">
       <div id="DoublePaneOneOne" class="col-md-6 cpr-5" runat="server"></div>
@@ -40,7 +41,8 @@
     <div class="row justify-content-center">
       <div id="SinglePaneOne" class="col-md-8 text-center" runat="server"></div>
     </div>
-  </div>    
+  </div>
+-->
 </main>
 
 <!-- Footer -->

@@ -1,0 +1,47 @@
+.dropdown {
+    #dropdownClasses {
+        background:transparent;
+        border:none;
+        border-bottom:1px solid $light-accent;
+        @include font-size(18);
+        font-family:inherit;
+        font-weight:600;
+        color:$main-brand;
+        padding:.5rem .75rem;
+        width:100%;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        cursor:pointer;
+        &:focus {
+            outline:none;
+        }
+        &:after {
+            content:'\f04b';
+            font-family:'Font Awesome 5 Free';
+            color:$dark-accent;
+            border:none;
+            transform:rotate(90deg);
+            @include font-size(14);
+            width:auto;
+            height:auto;
+            margin:0;
+        }    
+    }
+    li.active {
+        background-color:$main-brand;
+    }
+    .dropdown-item {
+        white-space:normal;
+        color: white !important;
+        text-decoration: none;
+    }
+    .dropdown-menu {
+      background-color: $dark-shade;
+      width:100%;
+    }
+  }
+  
+  
+  
+  

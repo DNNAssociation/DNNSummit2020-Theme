@@ -1,0 +1,28 @@
+[?NODE]
+<div class="container d-lg-none">
+  <div class="row">
+    <div class="col">
+      <nav id="nav-items">
+        <div class="dropdown" id="subnavigation">
+          <button id="dropdownClasses" class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SubNavigation</button>
+          <div class="dropdown-menu">
+            [*>NODE-TOP]
+          </div>
+        </div>
+
+        [>NODE-TOP]
+          <li[?SELECTED] class="active"[/?]>
+            
+            [?ENABLED]
+              <a class="dropdown-item" href="[=URL]">[=TEXT]</a>
+            [?ELSE]    
+              <a [?NODE]class="sub-toggle"[/?]>[=TEXT]</a>
+            [/?]  
+          </li>
+        [/>]
+
+      </nav>
+    </div>
+  </div>
+</div>
+[/?]

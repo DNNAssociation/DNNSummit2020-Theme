@@ -1,12 +1,25 @@
-// Colors
-$light-grey: #e6e6e6 !default;
-$grey:#7d7d7d !default;
-$dark-grey: #333333 !default;
+/* Colors */
 
-$primary-color: rgb(236, 61, 70) !default;
-$secondary-color: rgb(0, 165, 225) !default;
-$tertiary-color: rgb(70, 42, 43) !default;
+// Brand Colors
+$light-shade: #EDEEEF !default;
+$light-accent: #EBEACA !default;
+$main-brand: #E67C3B !default;
+$dark-accent: #1E335D !default;
+$dark-shade: #5b5b5c !default;
 
-$border-color: #bbb !default;
-$link-color: $primary-color !default;
-$font-color: #4a4a4a !default;
+$branding: () !default;
+$branding: map-merge((
+    "light-shade": $light-shade,
+    "light-accent": $light-accent,
+    "main-brand": $main-brand,
+    "dark-accent": $dark-accent,
+    "dark-shade": $dark-shade, 
+), $branding);
+
+// Text Colors
+$anchor-color: $main-brand !default;
+$font-color-dark: black;
+$font-color-light: $white !default;
+
+// Element Colors
+$border-color: $gray-100 !default;

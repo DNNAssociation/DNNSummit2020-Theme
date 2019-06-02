@@ -1,0 +1,15 @@
+<ul class="normal d-flex flex-column" id="footer-navigation">
+  [*>NODE-TOP]
+</ul>
+
+  [>NODE-TOP]
+    <li[?SELECTED] class="active"[/?]>
+      
+      [?ENABLED]
+        <a href="[=URL]">[=TEXT]</a>
+      [?ELSE]    
+        <a href="#">[=TEXT]</a>
+      [/?]
+    </li>
+  [/>]
+  

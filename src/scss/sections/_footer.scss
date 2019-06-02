@@ -1,20 +1,24 @@
 footer {
+  border-top: 0px solid #223541;
+
+  #footer-navigation{
+    flex-direction: column;
+  }
+  margin-top:auto;
   
   .upper {
     margin-bottom:0;
 
   }
-  a {
-    font-weight:400;
-  }
 
   .disclaimer {
-    @include font-size(12);
-    padding-top:1rem;
-    padding-bottom:1rem;
-    margin-bottom:0;
+    @include font-size(17);
 
-    ul {
+    p {
+      margin-bottom:0;
+    }
+
+    ul.piped {
       list-style-type:none;
       margin:0;
       padding:0;
@@ -24,17 +28,27 @@ footer {
 
       li + li:before {
         content:'';
-        display:inline-block;
-        vertical-align:middle;
-        height:100%;
-        width:10px;
+        @include font-size(9);
+        display:inline;
+        vertical-align:baseline;
         border-left:1px solid white;
-        margin-left:10px;
+        margin:0 10px;
       }
     }
-    
+  }
+
+  .social {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    display:flex;
+
+    li + li {
+      margin-left:.5rem;
+    }
+
     a {
-      color:white;
+      @include font-size(24);
     }
   }
 }
