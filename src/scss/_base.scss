@@ -31,6 +31,7 @@ body {
 h1, h2, h3, h4, h5 {
   font-family:$primary-font;
   font-weight:300;
+  color:$main-brand;
 }
 
 h1 {
@@ -133,7 +134,7 @@ a, a:not([href]):not([tabindex]) {
 hr {
   display:block;
   height:1px;
-  width:25%;
+  //width:25%;
   border:0;
   border-top: 1px solid $border-color;
   margin-top:1.5rem;

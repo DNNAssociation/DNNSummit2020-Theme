@@ -6,17 +6,23 @@
 
 <!-- Main Content -->
 <main>
-  <div class="container-fluid bannerpane">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div id="BannerPane" class="col-md-12 text-center" runat="server"></div>
-      </div>
+  <div class="container-fluid bannerpane px-0">
+    <div class="justify-content-center">
+      <div id="BannerPane" class="text-center" runat="server"></div>
     </div>
   </div>
 
-  <div class="container">
+  <div class="container py-4">
     <div class="row justify-content-center">
       <div id="ContentPane" class="col-md-12" runat="server"></div> 
+    </div>
+  </div>
+
+  <div class="container-fluid bg-light-shade">
+    <div class="container py-4">
+      <div class="row justify-content-center">
+        <div id="GrayPane" class="col-md-12" runat="server"></div> 
+      </div>
     </div>
   </div>
 

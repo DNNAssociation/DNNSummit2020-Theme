@@ -17,26 +17,19 @@
   background-size:cover;
 }
 
-.emergencyBanner {
-  background-color: $main-brand;
-  color: white;
-  text-align: center;
-  margin-top: 10px;
+.bannerTitle {
+  font-size: 10vw;
+  line-height: 14vw;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0px 5px #000;
 }
 
-.emergencyContent {
-  margin-top: 10px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-#servicesTitle {
-  color: white;
-  position: absolute;
-  bottom: 0;
-  background: #008490;
-  width: 100%;
-  text-align: center;
+@media (min-width: 768px) {
+  .bannerTitle {
+      font-size: 75px;
+      line-height: 75px;
+  }
 }
 
 .fab {
