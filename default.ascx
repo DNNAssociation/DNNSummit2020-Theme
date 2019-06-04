@@ -18,37 +18,27 @@
     </div>
   </div>
 
+  <div class="container py-4">
+    <div class="row justify-content-center">
+      <div id="LeftPane" class="col-md-8" runat="server"></div> 
+      <div id="RightPane" class="col-md-4" runat="server"></div> 
+    </div>
+  </div>
+
+  <div class="container-fluid px-0">
+      <div class="justify-content-center">
+        <div id="FluidPane" class="col-md-12 px-0" runat="server"></div> 
+      </div>
+  </div>
+
   <div class="container-fluid bg-light-shade">
-    <div class="container py-4">
+    <div class="container">
       <div class="row justify-content-center">
         <div id="GrayPane" class="col-md-12" runat="server"></div> 
       </div>
     </div>
   </div>
 
-<!--
-  <div class="container">
-    <div class="row">
-      <div id="DoublePaneOneOne" class="col-md-6 cpr-5" runat="server"></div>
-      <div id="DoublePaneOneTwo" class="col-md-6 bg-light-grey cp-5" runat="server"></div>
-    </div>
-  </div>   
-
-  <div class="container-fluid bg-tertiary">
-    <div class="container">
-      <div class="row align-items-center">
-        <div id="FullWidthBGDoublePaneOne" class="col-md-6 cpy-5" runat="server"></div>
-        <div id="FullWidthBGDoublePaneTwo" class="col-md-6" runat="server"></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row justify-content-center">
-      <div id="SinglePaneOne" class="col-md-8 text-center" runat="server"></div>
-    </div>
-  </div>
--->
 </main>
 
 <!-- Footer -->

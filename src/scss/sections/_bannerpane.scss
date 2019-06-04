@@ -32,6 +32,26 @@
   }
 }
 
+.bannerSubTitle {
+  border-bottom: 5px solid $main-brand;
+  color: #fff;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 40px;
+  padding-bottom: 0px;
+  position: absolute;
+  top: 372px;
+}
+
+@media only screen and (min-width: 768px) {
+  .bannerSubTitle {
+      border-bottom: 8px solid $main-brand;
+      font-size: 40px;
+      padding-bottom: 5px;
+      top: 421px;
+  }
+}
+
 .fab {
   color:white;
 }

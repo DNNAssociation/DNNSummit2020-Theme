@@ -1,0 +1,17 @@
+.sponsor-title-boxes:before {
+    background: url(../images/sponsor-box-arrow.png) no-repeat center;
+    bottom: -10px;
+    content: "";
+    display: inline-block;
+    height: 10px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.sponsor-title-boxes {
+    border: 1px solid;
+    margin-top: 30px;
+    padding: 10px 0;
+    position: relative;
+}
