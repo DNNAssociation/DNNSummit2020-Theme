@@ -1,4 +1,4 @@
-<ul class="slimmenu normal" id="navigation">
+<ul class="slimmenu normal py-5" id="navigation">
   [*>NODE-TOP]
 </ul>
 
@@ -6,9 +6,9 @@
     <li[?SELECTED] class="active"[/?]>
       
       [?ENABLED]
-        <a href="[=URL]" class="[?NODE] split[/?] py-5">[=TEXT]</a>
+        <a href="[=URL]" class="[?NODE] split[/?]">[=TEXT]</a>
       [?ELSE]    
-        <a href="#" class="[?NODE] single[/?] py-5">[=TEXT]</a>
+        <a href="#" class="[?NODE] single[/?]">[=TEXT]</a>
       [/?]
       
       [?NODE]

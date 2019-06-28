@@ -1,6 +1,6 @@
 .bannerpane {
   min-height:135px;
-  background:$light-shade;
+  //background:$light-shade;
   //background:linear-gradient(180deg, darken($light-accent, 20%) 0%, $light-accent 50%, lighten($light-accent, 20%) 100%);
   background-position:bottom center;
   background-size:cover;
@@ -104,4 +104,22 @@
     margin-left: 0;
   }
 
+}
+
+.diagonal {
+	width: auto;
+	height: auto;
+	background-color: $main-brand;
+	transform: skewX(-30deg);
+	transform-origin: top;
+	/*margin: 100px;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $font-color-light;
+	font-size: 2em;
+}
+
+.diagonal > span {
+	transform: skewX(30deg);
 }
