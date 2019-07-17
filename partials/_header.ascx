@@ -4,7 +4,7 @@
       <div class="row nav-main justify-content-between flex-nowrap align-items-center">
           <dnn:LOGO id="dnnLOGO" runat="server" />
           <div class="align-items-center">
-            <nav id="nav-items" class="pull-left pt-2">
+            <nav id="nav-items" class="float-right float-lg-left pt-2">
               <dnn:MENU id="menu" MenuStyle="menus/main" runat="server" NodeSelector="*,0,2"></dnn:MENU>
             </nav>
             <div id="CTAPane" class="pull-right pl-2 py-5" runat="server"></div> 

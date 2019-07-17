@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="9.0">
   <packages>
-    <package name="nvisionative.DNNSummit2020" type="Skin" version="1.0.0">
+    <package name="nvisionative.DNNSummit2020" type="Skin" version="1.0.1">
       <friendlyName>DNNSummit2020</friendlyName>
       <description>A DNN Theme Theme for DNN Summit 2020</description>
       <iconFile>MyIcon.png</iconFile>
