@@ -1,36 +1,52 @@
-<ul class="slimmenu normal py-5" id="navigation">
+<ul class="slimmenu col px-0" id="navigation">
   [*>NODE-TOP]
 </ul>
 
   [>NODE-TOP]
-    <li[?SELECTED] class="active"[/?]>
+    <li[?BREADCRUMB] class="active"[/?]>
       
       [?ENABLED]
-        <a href="[=URL]" class="[?NODE] split[/?]">[=TEXT]</a>
+        <a href="[=URL]"[?TARGET] target="[=TARGET]"[/?]>[=TEXT]</a>
       [?ELSE]    
-        <a href="#" class="[?NODE] single[/?]">[=TEXT]</a>
+        <a>[=TEXT]</a>
       [/?]
       
       [?NODE]
         <ul>
-          [*>NODE]
+          [*>NODE-LOWER]
         </ul>
       [/?]
     </li>
   [/>]
   
-  [>NODE]
-    <li class="[?SELECTED] active[/?]">
-      
-      [?ENABLED]  
-        <a href="[=URL]" [?NODE]class="split"[/?]>[=TEXT]</a>
-      [?ELSE]
-        <a href="#">[=TEXT]</a>
+  [>NODE-LOWER]
+    <li[?BREADCRUMB] class="active"[/?]>
+      [?ENABLED]
+        <a href="[=URL]"[?TARGET] target="[=TARGET]"[/?]" class="d-flex justify-content-between">[=TEXT]</a>
+      [?ELSE]    
+        <a>[=TEXT]</a>
       [/?]
       
       [?NODE]
         <ul>
-          [*>NODE]
+          <li class="title">[=TEXT]</li>
+          [*>NODE-BOTTOM]
+        </ul>
+      [/?]
+    </li>
+  [/>]
+
+  [>NODE-BOTTOM]
+    <li[?BREADCRUMB] class="active"[/?]>
+      [?ENABLED]
+        <a href="[=URL]"[?TARGET] target="[=TARGET]"[/?]>[=TEXT]</a>
+      [?ELSE]    
+        <a>[=TEXT]</a>
+      [/?]
+      
+      [?NODE]
+        <ul>
+          [*>NODE-BOTTOM]
         </ul>
       [/?]
     </li>
