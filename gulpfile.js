@@ -1,6 +1,7 @@
 var gulp          = require('gulp'),
     autoprefixer  = require('gulp-autoprefixer'),
     jshint        = require('gulp-jshint'),
+    concat        = require('gulp-concat'),
     sass          = require('gulp-sass'),
     imagemin      = require('gulp-imagemin'),
     rename        = require('gulp-rename'),
@@ -34,10 +35,6 @@ var paths = {
   faCss: {
     src: './node_modules/font-awesome/css/font-awesome.min.css',
     dest: './dist/css/'
-  },
-  slimMenu: {
-    src: './src/assets/jquery.slimmenu.min.js',
-    dest: './dist/js/'
   },
   normalize: {
     src: './node_modules/normalize.css/normalize.css',
@@ -121,13 +118,6 @@ function faCssInit() {
     .pipe(notify({message: '<%= file.relative %> distributed!', title : 'faCssInit', sound: false}));
 }
 
-// Copy jquery.slimmenu.min.js from src/assets to dist/js
-function slimMenuInit() {
-  return gulp.src(paths.slimMenu.src)
-    .pipe(gulp.dest(paths.slimMenu.dest))
-    .pipe(notify({message: '<%= file.relative %> distributed!', title : 'slimMenuInit', sound: false}));
-}
-
 // Compile normalize.css from node_modules and copy to dist/js
 function normalizeInit() {
   return gulp.src(paths.normalize.src, { sourcemaps: true })
@@ -202,11 +192,12 @@ function styles() {
 function scripts() {
   return gulp.src(paths.scripts.src, { sourcemaps: true })
     .pipe(jshint())
+    .pipe(jshint.reporter('default'))
+    .pipe(jshint.reporter('fail'))
+    .pipe(concat('custom.js'))
     .pipe(uglify())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest(paths.scripts.dest, { sourcemaps: '.' }))
-    .pipe(jshint.reporter('default'))
-    .pipe(jshint.reporter('fail'))
     .pipe(notify({ message : '<%= file.relative %> minified!', title : "scripts", sound: false}));
 }
 /*------------------------------------------------------*/
@@ -310,7 +301,7 @@ function watch() {
 }
 
 // gulp init
-var init = gulp.series(fontsInit, faFontsInit, faCssInit, slimMenuInit, normalizeInit, bsCssInit, bsJsInit);
+var init = gulp.series(fontsInit, faFontsInit, faCssInit, normalizeInit, bsCssInit, bsJsInit);
 
 // gulp build
 var build = gulp.series(init, styles, scripts, images, containers, manifest);
@@ -329,7 +320,6 @@ var package = gulp.series(build, ziptemp, zippackage, cleanup);
 exports.fontsInit = fontsInit;
 exports.faFontsInit = faFontsInit;
 exports.faCssInit = faCssInit;
-exports.slimMenuInit = slimMenuInit;
 exports.normalizeInit = normalizeInit;
 exports.bsCssInit = bsCssInit;
 exports.bsJsInit = bsJsInit;
