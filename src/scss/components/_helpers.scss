@@ -31,14 +31,7 @@
 
 [class*="bg-dark-"], [class*="bg-main-"]  {
   color:white;
-
-  .img-fluid {
-    border-right: 30px solid white;
-    border-left: 30px solid white;
-  }
 }
-
-
 
 // bg classes from gray colors in bootstrap
 @each $color, $value in $grays {
