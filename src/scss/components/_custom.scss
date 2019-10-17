@@ -1,0 +1,223 @@
+/* temporary menu style */
+/*
+.sub li.item.num-3,
+.sub li.item.num-5,
+.sub li.item.num-6,
+.sub li.item.num-7,
+.sub li.item.num-8,
+.sub li.item.num-9*/
+.sub .page-135,
+.sub .page-141,
+.sub .page-142,
+.sub .page-144
+{
+    /* background-color: #37548a; */
+  background-color:#182846;
+    padding-left: 20px;
+}
+.ten-pound-menu-mobile .sub li.item.num-3,
+.ten-pound-menu-mobile .sub li.item.num-5,
+.ten-pound-menu-mobile .sub li.item.num-6/*,
+.ten-pound-menu-mobile .sub li.item.num-7,
+.ten-pound-menu-mobile .sub li.item.num-8,
+.ten-pound-menu-mobile .sub li.item.num-9*/{
+background-color:#2d4358
+}
+
+/* Managed.com link */
+
+.managedLink{
+    display:inline-block;
+    width:140px;
+    position:relative;
+    top:-52px;
+    left:55px;
+}
+
+/* Links */
+.nav a{color:#666!important}
+
+/* Content Panes*/
+.myContentPane{
+  margin:30px 0;
+  padding-top:50px;
+}
+
+#Home{background-color: #5481e6;}
+#Hotel{background-color: #f76d3c;}
+#Event{background-color: #2ca8c2;}
+#Attend{background-color: #98cb4a;}
+#Speak{background-color: #839098;}
+#Ideas{background-color: #913ccd;}
+#Sponsors{background-color: #5481e6;}
+
+/* Sponsors */
+
+.R3{ padding-top:80px}
+.R4{ padding-top:80px}
+.R5{ padding-top:80px}
+.R6{ padding-top:60px}
+
+.P1{margin-top:40px; text-align:center}
+.P2{ text-align:center}
+.P3{margin-top:60px; text-align:center}
+.P4{margin-top:50px; text-align:center}
+.P5{ text-align:center}
+.P6{ margin-top:-70px;text-align:center}
+.P7{ margin-top:40px;text-align:center}
+.P7 img{
+    width:200px;
+}
+.P8{ text-align:center}
+.P9{ text-align:center}
+.P10{ text-align:center}
+.P11{ text-align:center}
+.P12{ text-align:center}
+.P13{ text-align:center; margin-top:-20px}
+.P14{ text-align:center}
+
+
+
+/* Buttons */
+.btn-primary {
+    color: #fff;
+    background-color: #839098;
+    border-color: #2e6da4;
+    border-width: 5px;
+}
+
+/* front page form submission */
+.submit-confirm{
+    background-color:transparent!important
+}
+
+/* box shadow on than you alert */
+html .bstrap3-material .alert-info {
+    -webkit-box-shadow: 0px 0px 0px rgba(0,0,0,.08)!important;
+    box-shadow: 0px 0px 0px rgba(0,0,0,.08)!important;
+}
+
+
+.columns2 {
+    column-count: 2;
+    column-gap: 40px;
+}
+
+.columns3 {
+    column-count: 3;
+    column-gap: 40px;
+}
+
+
+/* "Menu" */
+
+.navbar-collapse a{color:#666!important}
+
+.navbar-default {
+    background-color: #839098;
+    border-color: #e7e7e7;
+}
+
+.nav a {
+    color: #fff !important;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{
+    color: #555;
+    background-color: #f76d3c;
+}
+
+.icon-bar{
+    background-color:#fff!important;
+}
+
+.sideMenu{
+    position:fixed;
+    top:30%;
+    right:0;
+    z-index:10;
+    text-align:center;
+    width:100px;
+    margin-right:5px;
+}
+
+.sideMenu .item {
+    width:100px;
+    margin:2px 0;
+    padding:0 30px;
+    background-color:#808080;
+    border-radius:4px;
+}
+
+/* Action Form */
+
+.checkbox label{color:#fff}
+
+
+
+.phFormTemplate  select option{
+    color:#666!important
+}
+
+/* .phFormTemplate   .normalCheckBox::after{
+    border:2px solid #fff!important;
+} 
+
+.phFormTemplate  input[type=radio]:before,
+.phFormTemplate  input[type=radio]:checked:before{ 
+	background-color: #fff; 
+} 
+
+
+.phFormTemplate  input[type=radio]:after,
+.phFormTemplate  input[type=radio]:checked:after{ 
+	border-color: #fff; 
+} 
+*/
+/* Expandable Text */
+
+#dnn_ctr542_ContentPane{
+    width:60%!important;
+    margin-left:20%;
+}
+
+.ICG_ETH_Expanders{
+    text-align:left
+}
+
+.DnnModule-542 .Normal{
+    text-align:left!important;
+    margin-left:20px;
+}
+
+.DnnModule-542 .Normal a{
+    float:right;
+}
+
+.ICG_ETH_Title img{
+    display:none;
+}
+
+.ICG_ETH_Title{
+    font-weight:bold;
+    margin:20px 0;
+    text-align:left!important
+}
+
+.home #banner {
+    background: url("/Portals/0/Images/Summit2020/DNNSUmmit-2020-PalmTrees-min.png") no-repeat center bottom!important;
+    background-size: cover!important;
+    min-height: 390px!important;
+    text-align: center!important;
+}
+
+.banner-headline h1 {
+    color: #FFFFFF!important;
+    font-family: 'Lato', sans-serif!important;
+    text-shadow: 0 0px 5px #000000!important;
+}
+
+.dnnEditState .actionMenu {
+    z-index: 9999;
+}
+
