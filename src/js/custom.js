@@ -62,3 +62,21 @@ jQuery( document ).ready(function($) {
     }
   });  
 });
+
+$(function () {
+  $(".slimmenu ul > li.has-submenu").on('mouseenter mouseleave', function (e) {
+    var elm = $('>ul', this);
+    var off = elm.offset();
+    var l = off.left;
+    var w = elm.width();
+    var docW = $("body").width();
+
+    var isEntirelyVisible = (l + w <= docW);
+
+    if (!isEntirelyVisible) {
+        $(this).children('ul').addClass('edge');
+    } else {
+        $(this).children('ul').removeClass('edge');
+    }
+  });
+});
